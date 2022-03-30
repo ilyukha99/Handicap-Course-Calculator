@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+#root {
+    position: fixed; /* or absolute */
+    margin: 0 35% 0 35%;
+    width: 30%;
+    background: #f0f0f0;
+    letter-spacing: 1px;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: 1px groove black;
+}
+
+p {
+    text-align: center;
+    font-size: 105%
+}
+
+h2 {
+    text-align: center;
+}
+
+button {
+    margin: 2% 10% -10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    min-height: 4vh;
+    font-size: 1rem;
+    transition: ease-in-out 0.2s;
+    outline: none;
+}
+
+.info, .alert {
+    margin-right: 8%;
+    margin-left: 8%;
+    border: 1px solid black;
+}
+
+.info {
+    background: darkseagreen;
+}
+
+.alert {
+    background: #f54e42;
+}
+
+.none {
+    opacity: 0;
+}
+
+.mainPanel {
+    width: 80%;
+    height: 110%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.numericInput {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.evaluate {
+    margin-right: 0;
+    margin-left: 10%;
+    width: 60%;
+}
