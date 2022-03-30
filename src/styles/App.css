@@ -29,7 +29,6 @@ button {
     flex-direction: row;
     text-align: center;
     justify-content: space-evenly;
-    min-height: 4vh;
     font-size: 1rem;
     transition: ease-in-out 0.2s;
     outline: none;
