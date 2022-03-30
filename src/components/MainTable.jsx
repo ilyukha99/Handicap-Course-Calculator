@@ -9,12 +9,12 @@ const MainTable = () => {
         {id: 4, state: useState("68"), name: "Par score"}
     ]
 
-    let [firstView, setFirstView] = useState(true)
+    let [needNone, setNeedNone] = useState(true)
     const [allFine, setAllFine] = useState(false)
     const standardSlope = 113
     const [info, setInfo] = useState("")
     function evaluate() {
-        setFirstView(false)
+        setNeedNone(false)
 
         for (let it = 0; it < arr.length; ++it) {
             let obj = arr[it]
@@ -39,6 +39,7 @@ const MainTable = () => {
         for (let it = 0; it < arr.length; ++it) {
             arr[it].state[1]("")
         }
+        setNeedNone(true)
     }
 
     return (<div>
@@ -57,13 +58,13 @@ const MainTable = () => {
                         <button className="evaluate" onClick={evaluate}>Evaluate</button>
                     </td>
                     <td>
-                        <button onClick={clearValues}>Clear values</button>
+                        <button onClick={clearValues}>Clear</button>
                     </td>
                 </tr>
                 </tbody>
             </table>
             <div>
-                <p className={firstView ? "none" : (allFine ? "info" : "alert")}>{info}</p>
+                <p className={needNone ? "none" : (allFine ? "info" : "alert")}>{info}</p>
             </div>
         </div>
     );
